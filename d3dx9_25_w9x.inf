@@ -1,0 +1,26 @@
+
+[Version]
+Signature = "$CHICAGO$"
+AdvancedINF = 2.0
+Provider = %MSFT%
+SetupClass = BASE
+
+[SourceDisksNames]
+99 = %DiskName%,"Apr2005_d3dx9_25_x86.cab",0,,-1
+
+[SourceDisksFiles]
+d3dx9_25.dll = 99
+
+[DestinationDirs]
+DefaultDestDir = 11
+
+[DefaultInstall]
+CopyFiles = DirectX_System
+
+[DirectX_System]
+d3dx9_25.dll
+
+[Strings]
+MSFT                 = "Microsoft"
+DiskName             = "DirectX 9.0 Apr2005 cab"
+
